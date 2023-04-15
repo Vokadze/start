@@ -6,10 +6,10 @@ const LogOutButton = ({ onLogOut }) => {
     });
 
     return (
-      <button className="btn btn-primary" onClick={onLogOut}>
-          {" "}
-          LogOut
-      </button>
+        <button className="btn btn-primary" onClick={onLogOut}>
+            {" "}
+            LogOut
+        </button>
     );
 };
 LogOutButton.propTypes = {
@@ -32,16 +32,16 @@ const MemoWithUseCallbackExample = (props) => {
     }, [props]);
 
     return (
-      <>
-          <button
-            className="btn btn-primary"
-            onClick={() => setState(!state)}
-          >
-              initiate rerender
-          </button>
+        <>
+            <button
+                className="btn btn-primary"
+                onClick={() => setState(!state)}
+            >
+                initiate rerender
+            </button>
 
-          <MemoizedLogOutButton onLogOut={handleLogOut} />
-      </>
+            <MemoizedLogOutButton onLogOut={handleLogOut} />
+        </>
     );
 };
 

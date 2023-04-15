@@ -1,5 +1,7 @@
 module.exports = {
     trailingComma: "none",
     tabWidth: 4,
-    semi: true
+    semi: true,
+    useTabs: false
+    // overrides: [{files: "*"}]
 };

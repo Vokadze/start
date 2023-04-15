@@ -4,6 +4,7 @@ module.exports = {
         es2021: true
     },
     extends: ["plugin:react/recommended", "standard"],
+    // overrides: [],
     parserOptions: {
         ecmaFeatures: {
             jsx: true
@@ -21,12 +22,7 @@ module.exports = {
         ],
         "multiline-ternary": ["off"],
         "react/display-name": "off",
-        quotes: [
-            "error",
-            "double",
-            {
-                allowTemplateLiterals: true
-            }
-        ]
+        // "react/prop-types": "off",
+        quotes: ["error", "double", { allowTemplateLiterals: true }]
     }
 };
