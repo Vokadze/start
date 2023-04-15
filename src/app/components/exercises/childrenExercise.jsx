@@ -31,7 +31,8 @@ const ComponentsList = ({ children }) => {
         React.cloneElement(child, {
             ...child.props,
             num: +child.key.replace(".", "") + 1
-        }));
+        })
+    );
 };
 
 const Component = ({ num }) => {

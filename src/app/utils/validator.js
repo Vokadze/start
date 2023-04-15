@@ -35,6 +35,8 @@ export function validator(data, config) {
         }
         if (statusValidate) return config.message;
     }
+    // console.log для отображения ошибки
+    // console.log(data, config);
     for (const fieldName in data) {
         for (const validateMethod in config[fieldName]) {
             const error = validate(

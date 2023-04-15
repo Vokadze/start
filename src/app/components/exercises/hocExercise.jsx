@@ -38,9 +38,9 @@ const withFunctions = (Component) => (props) => {
     return (
         <CardWrapper>
             <Component
-            isAuth={isAuth}
-            onLogOut={handleLogOut}
-            onLogin={handleLogin}
+                isAuth={isAuth}
+                onLogOut={handleLogOut}
+                onLogin={handleLogin}
             />
         </CardWrapper>
     );
@@ -123,8 +123,8 @@ const HocExercise = () => {
                 <code>SimpleComponent</code> обновится после перезагрузки
                 страницы
             </p>
-            <Divider/>
-            <WithFunctionsSimpleComponent/>
+            <Divider />
+            <WithFunctionsSimpleComponent />
         </CollapseWrapper>
     );
 };
